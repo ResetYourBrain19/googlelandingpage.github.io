@@ -1,86 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-.navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.right-nav-bar{
-    display: flex;
-    align-items: center;
-}
-.nav-bar-a{
-    margin: 15px 15px;
-    text-decoration: none;
-    color: #1c1c1c;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 400;
-    font-size: 13px;
-
-    }
-a:hover{
-    text-decoration-line: underline;
-}
-.nav-bar-a:first-child{
-    margin-left: 15px;
-}
-.nav-button{
-    font-weight: 700;
-    background-color: #4285F4;
-    color: white;
-    border: none;
-    width: 70px;
-    height: 30px;
-    padding: 1px 6px;
-    margin-right: 10px;
-    margin-left: 2px;
-    border-radius: 3px;
-}
-    </style>
+    <title>Google Landing Page</title>
+    <link rel="shortcut icon" href="./img/google_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="left-nav-bar">
-            <a href="./about.html" class="nav-bar-a">About</a>
-            <a href="./store.html" class="nav-bar-a">Store</a>
+    <div class="container">
+        <nav>
+            <ul id="list1">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Store</a></li>
+            </ul>
+            <ul id="list2">
+                <li><a href="#">Gmail</a></li>
+                <li><a href="#">Images</a></li>
+                <li><a href="#"><img src="./img/appicon.png" alt="appicon" id="appicon"></a></li>
+                <li><a href="#" id="sign">Sıgn In</a></li>
+            </ul>
+        </nav>
+        <div class="main">
+            <div class="logo">
+                <img src="./img/googlelogo.png" alt="">
+
+            </div>
+            <div class="search">
+                <img src="./img/search.png" alt="searchpng">
+                <input type="search">
+                <a href="#" class="microphone"><img src="./img/google_microphone.png" alt="mic" id="mic"><span class="tooltip">Search By Voice</span></a>
+            </div>
+            <div class="buttons">
+                    <button>Google Search</button>
+                    <button>I'm Feeling Lucky</button>
+            </div>
+            <p>Other Languages you can use <a href="#" class="english">English</a> </p>
         </div>
-        <div class="right-nav-bar">
-            <a href="./store.html" class="nav-bar-a">Gmail</a>
-            <a href="./store.html" class="nav-bar-a">Images</a>
-            <a href="./store.html" class="nav-bar-a "><img src="./images/appicon.png" alt=""></a>
-            <button type="submit" class="nav-button">Sign In</button>
+        <footer>
+            <div class="ulke">
+                <p>Turkey</p>
+            </div>
 
-        </div>
+            <div class="author">
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">How Search Works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
 
-    </nav>
-
-
-
-
-
-
-    <div class="country">
-
-
+        </footer>
     </div>
-    <footer class="footer">
-
-
-    </footer>
 </body>
-
-
 </html>
